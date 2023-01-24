@@ -1,0 +1,810 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Opinoma - Evaluering - Introduktion</title>
+	<script src="https://cdn.tailwindcss.com"></script>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="range-slider.css">
+	<script type="text/javascript" src="tailwind-config.js"></script>
+</head>
+<body class="bg-gray-100 h-full w-full font-rubik">
+	<div class="header p-10 flex justify-between mb-5 text-2xl font-medium">
+		<img src="schoollogo.png" width="210">
+		<img src="logo.png" width="180">
+	</div>
+	<div class="mx-20 my-5 ">
+		<div class="wizard bg-white w-full p-10 shadow-md shadow-slate-300 flex mb-10">
+			<div class="step z-50 bg-white cursor-pointer complete relative w-80 box-border border rounded-l-lg border-gray-300 py-4 px-6 after:border-[32px] after:border-l-[21px] after:border-transparent after:border-l-white after:absolute after:top-0 after:right-0 after:translate-x-full before:border-[33px] before:border-l-[22px] before:border-transparent before:border-l-gray-400 before:absolute before:top-[-1px] before:right-0 before:translate-x-full">
+				<a href="index.html" class="w-full h-full">
+					<span class="flex items-center">
+						<div class="relative mr-4 w-8 h-8 rounded-full border-2 border-blue-700 bg-blue-700 flex justify-center items-center text-blue-700">
+							01
+							<img src="tick.png" class="absolute w-5 invert">
+						</div>
+						Introduktion
+					</span>
+				</a>
+			</div>
+			<div class="step z-40 bg-white cursor-pointer active relative w-80 box-border border border-l-0 border-gray-300 py-4 px-10 after:border-[32px] after:border-l-[21px] after:border-transparent after:border-l-white after:absolute after:top-0 after:right-0 after:translate-x-full before:border-[33px] before:border-l-[22px] before:border-transparent before:border-l-gray-400 before:absolute before:top-[-1px] before:right-0 before:translate-x-full">
+				<a href="page2.html" class="w-full h-full">
+					<span class="flex items-center">
+						<div class="mr-4 w-8 h-8 rounded-full border-2 border-blue-700 flex justify-center items-center text-blue-700">
+							02
+						</div>
+						Dig selv
+					</span>
+				</a>
+			</div>
+			<div class="step z-30 bg-white cursor-pointer relative w-80 box-border border border-l-0 border-gray-300 py-4 px-10 after:border-[32px] after:border-l-[21px] after:border-transparent after:border-l-white after:absolute after:top-0 after:right-0 after:translate-x-full before:border-[33px] before:border-l-[22px] before:border-transparent before:border-l-gray-400 before:absolute before:top-[-1px] before:right-0 before:translate-x-full">
+				<a href="page3.html" class="w-full h-full">
+					<span class="flex items-center">
+						<div class="mr-4 w-8 h-8 rounded-full border-2 border-gray-300 flex justify-center items-center text-gray-500">
+							03
+						</div>
+						Undervisningen
+					</span>
+				</a>
+			</div>
+			<div class="step z-20 bg-white cursor-pointer relative w-80 box-border border border-l-0 border-gray-300 py-4 px-10 after:border-[32px] after:border-l-[21px] after:border-transparent after:border-l-white after:absolute after:top-0 after:right-0 after:translate-x-full before:border-[33px] before:border-l-[22px] before:border-transparent before:border-l-gray-400 before:absolute before:top-[-1px] before:right-0 before:translate-x-full">
+				<a href="page4.html" class="w-full h-full">
+					<span class="flex items-center">
+						<div class="mr-4 w-8 h-8 rounded-full border-2 border-gray-300 flex justify-center items-center text-gray-500">
+							04
+						</div>
+						Underviseren
+					</span>
+				</a>
+			</div>
+			<div class="step z-10 bg-white cursor-pointer relative w-80 box-border border border-l-0 rounded-r-lg border-gray-300 py-4 px-10">
+				<a href="page5.html" class="w-full h-full">
+					<span class="flex items-center">
+						<div class="mr-4 w-8 h-8 rounded-full border-2 border-gray-300 flex justify-center items-center text-gray-500">
+							05
+						</div>
+						Uddannelsen
+					</span>
+				</a>
+			</div>
+		</div>
+		<div class="satisfy bg-white w-full p-10 shadow-md shadow-slate-300 flex mb-10 flex-col">
+			<div class="header mb-10">
+				<div class="flex">
+					<span class="font-bold text-lg mr-5">Læring</span>
+					<img src="audio.png" class="flex w-6 h-6">
+				</div>
+				<span class="text-sm">Dette afsnit af undersøgelsen omhandler....</span>
+			</div>
+			<div class="py-28 mb-3 border-gray-300 flex">
+				<span class="w-3/12 font-normal text-2xl mr-1 flex shrink-0">Jeg oplever at underviseren udfordrer mit faglige niveau?</span>
+				<div class="w-full">
+					<div class="px-[10%] py-0">
+						<div class="slidecontainer w-full relative">
+							<input type="range" min="1" max="100" value="50" class="slider absolute appearance-none w-[99.7%] h-[100px] outline-none opacity-50 transition-opacity duration-200 bg-rainbow hover:opacity-100 top-0.5" id="myRangezz" style="clip-path: polygon(100% 0, 0 50%, 100% 100%);" />
+
+							<div class="box absolute right-0 w-full h-[105px] bg-sky border-r-[5px] border-color1" style="clip-path: polygon(50% 25%, 50% 75%, 100% 100%, 100% 0%);" id="boxzz"></div>
+							<div class="board top-0.5 absolute appearance-none w-[99.7%] h-[100px] outline-none opacity-100 transition-opacity duration-200 bg-color1" style="clip-path: polygon(0 0, 0 50%, 100% 0);" id="boardzz"></div>
+							<div class="board1 top-[52px] absolute appearance-none w-[99.7%] h-[100px] outline-none opacity-100 transition-opacity duration-200 bg-color1" style="clip-path: polygon(0 0, 0 50%, 100% 50%);" id="board1zz"></div>
+							<div class="board2 top-[55px] absolute appearance-none w-[99.7%] h-[100px] outline-none opacity-100 transition-opacity duration-200 bg-white" style="clip-path: polygon(0 0, 0 50%, 100% 50%);" id="board2zz"></div>
+							<div class="board3 top-0 absolute appearance-none outline-none w-[99.7%] h-[100px] opacity-100 transition-opacity bg-white duration-200" style="clip-path: polygon(0 0, 0 50%, 100% 0);" id="board3zz"></div>
+							<input type="range" min="1" max="100" value="50" class="slider1 absolute top-[50px] appearance-none w-[99.7%] h-0 outline-none opacity-100 transition-opacity duration-200 bg-rainbow hover:opacity-100" id="myRange1zz" onmouseup="movezz()" />
+							<div class="face w-[50px] h-[60px] absolute -top-20 left-[50%]" id="facezz">
+								<div class="face1 bg-face-gradient w-[50px] h-[50px] rounded-full relative">
+									<div class="mouth absolute bg-white w-[30px] h-[5px] rounded-none top-[35px] left-[10px]" id="mousezz"></div>
+									<div class="eye1 absolute bg-white w-[10px] h-[10px] rounded-full top-[15px] left-[10px]"></div>
+									<div class="eye2 absolute bg-white w-[10px] h-[10px] rounded-full top-[15px] right-[10px]"></div>
+									<div class="triangle absolute top-10 h-10 w-[50px] bg-triangle-gradient left-0" style="clip-path: polygon(10% 0, 0 30%, 40% 20%);"></div>
+									<div class="line1"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="select text-2xl pt-[130px] flex text-center">
+						<div
+							id="text1zz"
+							onclick="selectzz(1)"
+							class="relative font-thin text-sm py-[5px] px-0 w-1/5"
+						>
+							I meget lav grad
+						</div>
+						<div
+							class="rangetexts relative text-sm py-[5px] px-0 w-1/5"
+							id="text2zz"
+							onclick="selectzz(2)"
+						>
+							I lav grad
+						</div>
+						<div
+							class="rangetexts relative text-sm py-[5px] px-0 w-1/5"
+							id="text3zz"
+							onclick="selectzz(3)"
+						>
+							I nogenlunde grad
+						</div>
+						<div
+							class="rangetexts relative text-sm py-[5px] px-0 w-1/5"
+							id="text4zz"
+							onclick="selectzz(4)"
+						>
+							I høj grad
+						</div>
+						<div
+							class="rangetexts relative text-sm py-[5px] px-0 w-1/5"
+							id="text5zz"
+							onclick="selectzz(5)"
+						>
+							I meget høj grad
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="py-28 mb-3 border-gray-300 flex">
+				<span class="w-3/12 font-normal text-2xl mr-1 flex shrink-0">Hvordan vurderer du din egen evne til at lære nyt?</span>
+				<div class="w-full">
+					<div class="px-[10%] py-0">
+						<div class="slidecontainer w-full relative">
+							<input type="range" min="1" max="100" value="50" class="slider absolute appearance-none w-[99.7%] h-[100px] outline-none opacity-50 transition-opacity duration-200 bg-rainbow hover:opacity-100 top-0.5" id="myRangezz" style="clip-path: polygon(100% 0, 0 50%, 100% 100%);" />
+
+							<div class="box absolute right-0 w-full h-[105px] bg-sky border-r-[5px] border-color1" style="clip-path: polygon(50% 25%, 50% 75%, 100% 100%, 100% 0%);" id="boxzz"></div>
+							<div class="board top-0.5 absolute appearance-none w-[99.7%] h-[100px] outline-none opacity-100 transition-opacity duration-200 bg-color1" style="clip-path: polygon(0 0, 0 50%, 100% 0);" id="boardzz"></div>
+							<div class="board1 top-[52px] absolute appearance-none w-[99.7%] h-[100px] outline-none opacity-100 transition-opacity duration-200 bg-color1" style="clip-path: polygon(0 0, 0 50%, 100% 50%);" id="board1zz"></div>
+							<div class="board2 top-[55px] absolute appearance-none w-[99.7%] h-[100px] outline-none opacity-100 transition-opacity duration-200 bg-white" style="clip-path: polygon(0 0, 0 50%, 100% 50%);" id="board2zz"></div>
+							<div class="board3 top-0 absolute appearance-none outline-none w-[99.7%] h-[100px] opacity-100 transition-opacity bg-white duration-200" style="clip-path: polygon(0 0, 0 50%, 100% 0);" id="board3zz"></div>
+							<input type="range" min="1" max="100" value="50" class="slider1 absolute top-[50px] appearance-none w-[99.7%] h-0 outline-none opacity-100 transition-opacity duration-200 bg-rainbow hover:opacity-100" id="myRange1zz" onmouseup="movezz()" />
+							<div class="face w-[50px] h-[60px] absolute -top-20 left-[50%]" id="facezz">
+								<div class="face1 bg-face-gradient w-[50px] h-[50px] rounded-full relative">
+									<div class="mouth absolute bg-white w-[30px] h-[5px] rounded-none top-[35px] left-[10px]" id="mousezz"></div>
+									<div class="eye1 absolute bg-white w-[10px] h-[10px] rounded-full top-[15px] left-[10px]"></div>
+									<div class="eye2 absolute bg-white w-[10px] h-[10px] rounded-full top-[15px] right-[10px]"></div>
+									<div class="triangle absolute top-10 h-10 w-[50px] bg-triangle-gradient left-0" style="clip-path: polygon(10% 0, 0 30%, 40% 20%);"></div>
+									<div class="line1"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="select text-2xl pt-[130px] flex text-center">
+						<div
+							id="text1zz"
+							onclick="selectzz(1)"
+							class="relative font-thin text-sm py-[5px] px-0 w-1/5"
+						>
+							Meget svært
+						</div>
+						<div
+							class="rangetexts relative text-sm py-[5px] px-0 w-1/5"
+							id="text2zz"
+							onclick="selectzz(2)"
+						>
+							Svært
+						</div>
+						<div
+							class="rangetexts relative text-sm py-[5px] px-0 w-1/5"
+							id="text3zz"
+							onclick="selectzz(3)"
+						>
+							Nogenlunde
+						</div>
+						<div
+							class="rangetexts relative text-sm py-[5px] px-0 w-1/5"
+							id="text4zz"
+							onclick="selectzz(4)"
+						>
+							Let
+						</div>
+						<div
+							class="rangetexts relative text-sm py-[5px] px-0 w-1/5"
+							id="text5zz"
+							onclick="selectzz(5)"
+						>
+							Meget let
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="py-28 mb-3 border-gray-300 flex">
+				<span class="w-3/12 font-normal text-2xl mr-1 flex shrink-0">Har du været mentalt tilstede i undervisningen og klar til at tage imod viden? </span>
+				<div class="w-full">
+					<div class="px-[10%] py-0">
+						<div class="slidecontainer w-full relative">
+							<input type="range" min="1" max="100" value="50" class="slider absolute appearance-none w-[99.7%] h-[100px] outline-none opacity-50 transition-opacity duration-200 bg-rainbow hover:opacity-100 top-0.5" id="myRangezz" style="clip-path: polygon(100% 0, 0 50%, 100% 100%);" />
+
+							<div class="box absolute right-0 w-full h-[105px] bg-sky border-r-[5px] border-color1" style="clip-path: polygon(50% 25%, 50% 75%, 100% 100%, 100% 0%);" id="boxzz"></div>
+							<div class="board top-0.5 absolute appearance-none w-[99.7%] h-[100px] outline-none opacity-100 transition-opacity duration-200 bg-color1" style="clip-path: polygon(0 0, 0 50%, 100% 0);" id="boardzz"></div>
+							<div class="board1 top-[52px] absolute appearance-none w-[99.7%] h-[100px] outline-none opacity-100 transition-opacity duration-200 bg-color1" style="clip-path: polygon(0 0, 0 50%, 100% 50%);" id="board1zz"></div>
+							<div class="board2 top-[55px] absolute appearance-none w-[99.7%] h-[100px] outline-none opacity-100 transition-opacity duration-200 bg-white" style="clip-path: polygon(0 0, 0 50%, 100% 50%);" id="board2zz"></div>
+							<div class="board3 top-0 absolute appearance-none outline-none w-[99.7%] h-[100px] opacity-100 transition-opacity bg-white duration-200" style="clip-path: polygon(0 0, 0 50%, 100% 0);" id="board3zz"></div>
+							<input type="range" min="1" max="100" value="50" class="slider1 absolute top-[50px] appearance-none w-[99.7%] h-0 outline-none opacity-100 transition-opacity duration-200 bg-rainbow hover:opacity-100" id="myRange1zz" onmouseup="movezz()" />
+							<div class="face w-[50px] h-[60px] absolute -top-20 left-[50%]" id="facezz">
+								<div class="face1 bg-face-gradient w-[50px] h-[50px] rounded-full relative">
+									<div class="mouth absolute bg-white w-[30px] h-[5px] rounded-none top-[35px] left-[10px]" id="mousezz"></div>
+									<div class="eye1 absolute bg-white w-[10px] h-[10px] rounded-full top-[15px] left-[10px]"></div>
+									<div class="eye2 absolute bg-white w-[10px] h-[10px] rounded-full top-[15px] right-[10px]"></div>
+									<div class="triangle absolute top-10 h-10 w-[50px] bg-triangle-gradient left-0" style="clip-path: polygon(10% 0, 0 30%, 40% 20%);"></div>
+									<div class="line1"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="select text-2xl pt-[130px] flex text-center">
+						<div
+							id="text1zz"
+							onclick="selectzz(1)"
+							class="relative font-thin text-sm py-[5px] px-0 w-1/5"
+						>
+							I meget lav grad
+						</div>
+						<div
+							class="rangetexts relative text-sm py-[5px] px-0 w-1/5"
+							id="text2zz"
+							onclick="selectzz(2)"
+						>
+							I lav grad
+						</div>
+						<div
+							class="rangetexts relative text-sm py-[5px] px-0 w-1/5"
+							id="text3zz"
+							onclick="selectzz(3)"
+						>
+							I nogenlunde grad
+						</div>
+						<div
+							class="rangetexts relative text-sm py-[5px] px-0 w-1/5"
+							id="text4zz"
+							onclick="selectzz(4)"
+						>
+							I høj grad
+						</div>
+						<div
+							class="rangetexts relative text-sm py-[5px] px-0 w-1/5"
+							id="text5zz"
+							onclick="selectzz(5)"
+						>
+							I meget høj grad
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="tick bg-white w-full p-10 shadow-md shadow-slate-300 mb-10">
+			<div class="header mb-10">
+				<div class="flex">
+					<span class="font-bold text-lg mr-5">Forventninger</span>
+					<img src="audio.png" class="flex w-6 h-6">>
+				</div>
+				<span class="text-sm">Dette afsnit omhandler...</span>
+			</div>
+			<div class="content">
+				<table class="border-gray w-full">
+					<thead>
+						<tr>
+							<th class="w-1/3"></th>
+							<th class="border ">I meget lav grad</th>
+							<th class="border">I lav grad</th>
+							<th class="border">I nogenlunde grad</th>
+							<th class="border">I høj grad</th>
+							<th class="border">I meget høj grad</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="border-b py-3 text-2xl">Underviseren forventer noget af mig i undervisningen</td>
+							<td class="border relative" onclick="javascript:handleToggle(this);">
+								<div class="w-7 h-7 rounded-full bg-gray-300 ml-[50%] -translate-x-1/2"></div>
+								<img src="Checkmark.png" width="40" class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 hidden">
+							</td>
+							<td class="border relative" onclick="javascript:handleToggle(this);">
+								<div class="w-7 h-7 rounded-full bg-gray-300 ml-[50%] -translate-x-1/2"></div>
+								<img src="Checkmark.png" width="40" class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 hidden">
+							</td>
+							<td class="border relative" onclick="javascript:handleToggle(this);">
+								<div class="w-7 h-7 rounded-full bg-gray-300 ml-[50%] -translate-x-1/2"></div>
+								<img src="Checkmark.png" width="40" class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 hidden">
+							</td>
+							<td class="border relative" onclick="javascript:handleToggle(this);">
+								<div class="w-7 h-7 rounded-full bg-gray-300 ml-[50%] -translate-x-1/2"></div>
+								<img src="Checkmark.png" width="40" class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 hidden">
+							</td>
+							<td class="border relative" onclick="javascript:handleToggle(this);">
+								<div class="w-7 h-7 rounded-full bg-gray-300 ml-[50%] -translate-x-1/2"></div>
+								<img src="Checkmark.png" width="40" class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 hidden">
+							</td>
+						</tr>
+						<tr>
+							<td class="border-b py-3 text-2xl">Det er vigtigt for mig at der forventes noget af mig</td>
+							<td class="border relative" onclick="javascript:handleToggle(this);">
+								<div class="w-7 h-7 rounded-full bg-gray-300 ml-[50%] -translate-x-1/2"></div>
+								<img src="Checkmark.png" width="40" class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 hidden">
+							</td>
+							<td class="border relative" onclick="javascript:handleToggle(this);">
+								<div class="w-7 h-7 rounded-full bg-gray-300 ml-[50%] -translate-x-1/2"></div>
+								<img src="Checkmark.png" width="40" class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 hidden">
+							</td>
+							<td class="border relative" onclick="javascript:handleToggle(this);">
+								<div class="w-7 h-7 rounded-full bg-gray-300 ml-[50%] -translate-x-1/2"></div>
+								<img src="Checkmark.png" width="40" class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 hidden">
+							</td>
+							<td class="border relative" onclick="javascript:handleToggle(this);">
+								<div class="w-7 h-7 rounded-full bg-gray-300 ml-[50%] -translate-x-1/2"></div>
+								<img src="Checkmark.png" width="40" class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 hidden">
+							</td>
+							<td class="border relative" onclick="javascript:handleToggle(this);">
+								<div class="w-7 h-7 rounded-full bg-gray-300 ml-[50%] -translate-x-1/2"></div>
+								<img src="Checkmark.png" width="40" class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 hidden">
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+		<div class="tick bg-white w-full p-10 shadow-md shadow-slate-300 mb-10">
+			<div class="header mb-10">
+				<div class="flex">
+					<span class="font-bold text-lg mr-5">Aktiv læring</span>
+					<img src="audio.png" class="flex w-6 h-6">>
+				</div>
+				<span class="text-sm">Dette afsnit omhandler.....</span>
+			</div>
+			<div class="content">
+				<table class="border-gray w-full">
+					<thead>
+						<tr>
+							<th class="w-1/3"></th>
+							<th class="border ">I meget lav grad</th>
+							<th class="border">I lav grad</th>
+							<th class="border">I nogenlunde grad</th>
+							<th class="border">I høj grad</th>
+							<th class="border">I meget høj grad</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="border-b py-3 text-2xl">Underviseren har lavet undervisningen således det sker aktivt (forklaring)</td>
+							<td class="border relative" onclick="javascript:handleToggle(this);">
+								<div class="w-7 h-7 rounded-full bg-gray-300 ml-[50%] -translate-x-1/2"></div>
+								<img src="Checkmark.png" width="40" class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 hidden">
+							</td>
+							<td class="border relative" onclick="javascript:handleToggle(this);">
+								<div class="w-7 h-7 rounded-full bg-gray-300 ml-[50%] -translate-x-1/2"></div>
+								<img src="Checkmark.png" width="40" class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 hidden">
+							</td>
+							<td class="border relative" onclick="javascript:handleToggle(this);">
+								<div class="w-7 h-7 rounded-full bg-gray-300 ml-[50%] -translate-x-1/2"></div>
+								<img src="Checkmark.png" width="40" class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 hidden">
+							</td>
+							<td class="border relative" onclick="javascript:handleToggle(this);">
+								<div class="w-7 h-7 rounded-full bg-gray-300 ml-[50%] -translate-x-1/2"></div>
+								<img src="Checkmark.png" width="40" class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 hidden">
+							</td>
+							<td class="border relative" onclick="javascript:handleToggle(this);">
+								<div class="w-7 h-7 rounded-full bg-gray-300 ml-[50%] -translate-x-1/2"></div>
+								<img src="Checkmark.png" width="40" class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 hidden">
+							</td>
+						</tr>
+						<tr>
+							<td class="border-b py-3 text-2xl">Jeg har oplevet at jeg har lært aktivt, både fysisk og mentalt</td>
+							<td class="border relative" onclick="javascript:handleToggle(this);">
+								<div class="w-7 h-7 rounded-full bg-gray-300 ml-[50%] -translate-x-1/2"></div>
+								<img src="Checkmark.png" width="40" class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 hidden">
+							</td>
+							<td class="border relative" onclick="javascript:handleToggle(this);">
+								<div class="w-7 h-7 rounded-full bg-gray-300 ml-[50%] -translate-x-1/2"></div>
+								<img src="Checkmark.png" width="40" class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 hidden">
+							</td>
+							<td class="border relative" onclick="javascript:handleToggle(this);">
+								<div class="w-7 h-7 rounded-full bg-gray-300 ml-[50%] -translate-x-1/2"></div>
+								<img src="Checkmark.png" width="40" class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 hidden">
+							</td>
+							<td class="border relative" onclick="javascript:handleToggle(this);">
+								<div class="w-7 h-7 rounded-full bg-gray-300 ml-[50%] -translate-x-1/2"></div>
+								<img src="Checkmark.png" width="40" class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 hidden">
+							</td>
+							<td class="border relative" onclick="javascript:handleToggle(this);">
+								<div class="w-7 h-7 rounded-full bg-gray-300 ml-[50%] -translate-x-1/2"></div>
+								<img src="Checkmark.png" width="40" class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 hidden">
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+		<div class="tick bg-white w-full p-10 shadow-md shadow-slate-300 mb-10">
+			<div class="header mb-10">
+				<div class="flex">
+					<span class="font-bold text-lg mr-5">Motivation</span>
+					<img src="audio.png" class="flex w-6 h-6">>
+				</div>
+				<span class="text-sm">Dette afsnit omhandler....</span>
+			</div>
+			<div class="content">
+				<table class="border-gray w-full">
+					<thead>
+						<tr>
+							<th class="w-1/3"></th>
+							<th class="border ">I meget lav grad</th>
+							<th class="border">I lav grad</th>
+							<th class="border">I nogenlunde grad</th>
+							<th class="border">I høj grad</th>
+							<th class="border">I meget høj grad</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="border-b py-3 text-2xl">Underviseren forsøger at motivere mig</td>
+							<td class="border relative" onclick="javascript:handleToggle(this);">
+								<div class="w-7 h-7 rounded-full bg-gray-300 ml-[50%] -translate-x-1/2"></div>
+								<img src="Checkmark.png" width="40" class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 hidden">
+							</td>
+							<td class="border relative" onclick="javascript:handleToggle(this);">
+								<div class="w-7 h-7 rounded-full bg-gray-300 ml-[50%] -translate-x-1/2"></div>
+								<img src="Checkmark.png" width="40" class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 hidden">
+							</td>
+							<td class="border relative" onclick="javascript:handleToggle(this);">
+								<div class="w-7 h-7 rounded-full bg-gray-300 ml-[50%] -translate-x-1/2"></div>
+								<img src="Checkmark.png" width="40" class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 hidden">
+							</td>
+							<td class="border relative" onclick="javascript:handleToggle(this);">
+								<div class="w-7 h-7 rounded-full bg-gray-300 ml-[50%] -translate-x-1/2"></div>
+								<img src="Checkmark.png" width="40" class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 hidden">
+							</td>
+							<td class="border relative" onclick="javascript:handleToggle(this);">
+								<div class="w-7 h-7 rounded-full bg-gray-300 ml-[50%] -translate-x-1/2"></div>
+								<img src="Checkmark.png" width="40" class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 hidden">
+							</td>
+						</tr>
+						<tr>
+							<td class="border-b py-3 text-2xl">Jeg er motiveret</td>
+							<td class="border relative" onclick="javascript:handleToggle(this);">
+								<div class="w-7 h-7 rounded-full bg-gray-300 ml-[50%] -translate-x-1/2"></div>
+								<img src="Checkmark.png" width="40" class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 hidden">
+							</td>
+							<td class="border relative" onclick="javascript:handleToggle(this);">
+								<div class="w-7 h-7 rounded-full bg-gray-300 ml-[50%] -translate-x-1/2"></div>
+								<img src="Checkmark.png" width="40" class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 hidden">
+							</td>
+							<td class="border relative" onclick="javascript:handleToggle(this);">
+								<div class="w-7 h-7 rounded-full bg-gray-300 ml-[50%] -translate-x-1/2"></div>
+								<img src="Checkmark.png" width="40" class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 hidden">
+							</td>
+							<td class="border relative" onclick="javascript:handleToggle(this);">
+								<div class="w-7 h-7 rounded-full bg-gray-300 ml-[50%] -translate-x-1/2"></div>
+								<img src="Checkmark.png" width="40" class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 hidden">
+							</td>
+							<td class="border relative" onclick="javascript:handleToggle(this);">
+								<div class="w-7 h-7 rounded-full bg-gray-300 ml-[50%] -translate-x-1/2"></div>
+								<img src="Checkmark.png" width="40" class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 hidden">
+							</td>
+						</tr>
+						<tr>
+							<td class="border-b py-3 text-2xl">Motivation er vigtig for min læring</td>
+							<td class="border relative" onclick="javascript:handleToggle(this);">
+								<div class="w-7 h-7 rounded-full bg-gray-300 ml-[50%] -translate-x-1/2"></div>
+								<img src="Checkmark.png" width="40" class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 hidden">
+							</td>
+							<td class="border relative" onclick="javascript:handleToggle(this);">
+								<div class="w-7 h-7 rounded-full bg-gray-300 ml-[50%] -translate-x-1/2"></div>
+								<img src="Checkmark.png" width="40" class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 hidden">
+							</td>
+							<td class="border relative" onclick="javascript:handleToggle(this);">
+								<div class="w-7 h-7 rounded-full bg-gray-300 ml-[50%] -translate-x-1/2"></div>
+								<img src="Checkmark.png" width="40" class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 hidden">
+							</td>
+							<td class="border relative" onclick="javascript:handleToggle(this);">
+								<div class="w-7 h-7 rounded-full bg-gray-300 ml-[50%] -translate-x-1/2"></div>
+								<img src="Checkmark.png" width="40" class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 hidden">
+							</td>
+							<td class="border relative" onclick="javascript:handleToggle(this);">
+								<div class="w-7 h-7 rounded-full bg-gray-300 ml-[50%] -translate-x-1/2"></div>
+								<img src="Checkmark.png" width="40" class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 hidden">
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+		<div class="satisfy bg-white w-full p-10 shadow-md shadow-slate-300 flex mb-10 flex-col">
+			<div class="header mb-10">
+				<div class="flex">
+					<span class="font-bold text-lg mr-5">Question Placeholder</span>
+					<img src="audio.png" class="flex w-6 h-6">
+				</div>
+				<span class="text-sm">Descrispantion placeholder</span>
+			</div>
+			<div class="py-28 mb-3 border-gray-300 flex">
+				<span class="w-3/12 font-normal text-2xl mr-1 flex shrink-0">Underviseren giver os et godt undervisningsmiljø</span>
+				<div class="w-full">
+					<div class="px-[10%] py-0">
+						<div class="slidecontainer w-full relative">
+							<input type="range" min="1" max="100" value="50" class="slider absolute appearance-none w-[99.7%] h-[100px] outline-none opacity-50 transition-opacity duration-200 bg-rainbow hover:opacity-100 top-0.5" id="myRangezz" style="clip-path: polygon(100% 0, 0 50%, 100% 100%);" />
+
+							<div class="box absolute right-0 w-full h-[105px] bg-sky border-r-[5px] border-color1" style="clip-path: polygon(50% 25%, 50% 75%, 100% 100%, 100% 0%);" id="boxzz"></div>
+							<div class="board top-0.5 absolute appearance-none w-[99.7%] h-[100px] outline-none opacity-100 transition-opacity duration-200 bg-color1" style="clip-path: polygon(0 0, 0 50%, 100% 0);" id="boardzz"></div>
+							<div class="board1 top-[52px] absolute appearance-none w-[99.7%] h-[100px] outline-none opacity-100 transition-opacity duration-200 bg-color1" style="clip-path: polygon(0 0, 0 50%, 100% 50%);" id="board1zz"></div>
+							<div class="board2 top-[55px] absolute appearance-none w-[99.7%] h-[100px] outline-none opacity-100 transition-opacity duration-200 bg-white" style="clip-path: polygon(0 0, 0 50%, 100% 50%);" id="board2zz"></div>
+							<div class="board3 top-0 absolute appearance-none outline-none w-[99.7%] h-[100px] opacity-100 transition-opacity bg-white duration-200" style="clip-path: polygon(0 0, 0 50%, 100% 0);" id="board3zz"></div>
+							<input type="range" min="1" max="100" value="50" class="slider1 absolute top-[50px] appearance-none w-[99.7%] h-0 outline-none opacity-100 transition-opacity duration-200 bg-rainbow hover:opacity-100" id="myRange1zz" onmouseup="movezz()" />
+							<div class="face w-[50px] h-[60px] absolute -top-20 left-[50%]" id="facezz">
+								<div class="face1 bg-face-gradient w-[50px] h-[50px] rounded-full relative">
+									<div class="mouth absolute bg-white w-[30px] h-[5px] rounded-none top-[35px] left-[10px]" id="mousezz"></div>
+									<div class="eye1 absolute bg-white w-[10px] h-[10px] rounded-full top-[15px] left-[10px]"></div>
+									<div class="eye2 absolute bg-white w-[10px] h-[10px] rounded-full top-[15px] right-[10px]"></div>
+									<div class="triangle absolute top-10 h-10 w-[50px] bg-triangle-gradient left-0" style="clip-path: polygon(10% 0, 0 30%, 40% 20%);"></div>
+									<div class="line1"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="select text-2xl pt-[130px] flex text-center">
+						<div
+							id="text1zz"
+							onclick="selectzz(1)"
+							class="relative font-thin text-sm py-[5px] px-0 w-1/5"
+						>
+							I meget lav grad
+						</div>
+						<div
+							class="rangetexts relative text-sm py-[5px] px-0 w-1/5"
+							id="text2zz"
+							onclick="selectzz(2)"
+						>
+							I lav grad
+						</div>
+						<div
+							class="rangetexts relative text-sm py-[5px] px-0 w-1/5"
+							id="text3zz"
+							onclick="selectzz(3)"
+						>
+							I nogenlunde grad
+						</div>
+						<div
+							class="rangetexts relative text-sm py-[5px] px-0 w-1/5"
+							id="text4zz"
+							onclick="selectzz(4)"
+						>
+							I høj grad
+						</div>
+						<div
+							class="rangetexts relative text-sm py-[5px] px-0 w-1/5"
+							id="text5zz"
+							onclick="selectzz(5)"
+						>
+							I meget høj grad
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="py-28 mb-3 border-gray-300 flex">
+				<span class="w-3/12 font-normal text-2xl mr-1 flex shrink-0">Jeg bidrager til et godt undervisningsmiljø</span>
+				<div class="w-full">
+					<div class="px-[10%] py-0">
+						<div class="slidecontainer w-full relative">
+							<input type="range" min="1" max="100" value="50" class="slider absolute appearance-none w-[99.7%] h-[100px] outline-none opacity-50 transition-opacity duration-200 bg-rainbow hover:opacity-100 top-0.5" id="myRangezz" style="clip-path: polygon(100% 0, 0 50%, 100% 100%);" />
+
+							<div class="box absolute right-0 w-full h-[105px] bg-sky border-r-[5px] border-color1" style="clip-path: polygon(50% 25%, 50% 75%, 100% 100%, 100% 0%);" id="boxzz"></div>
+							<div class="board top-0.5 absolute appearance-none w-[99.7%] h-[100px] outline-none opacity-100 transition-opacity duration-200 bg-color1" style="clip-path: polygon(0 0, 0 50%, 100% 0);" id="boardzz"></div>
+							<div class="board1 top-[52px] absolute appearance-none w-[99.7%] h-[100px] outline-none opacity-100 transition-opacity duration-200 bg-color1" style="clip-path: polygon(0 0, 0 50%, 100% 50%);" id="board1zz"></div>
+							<div class="board2 top-[55px] absolute appearance-none w-[99.7%] h-[100px] outline-none opacity-100 transition-opacity duration-200 bg-white" style="clip-path: polygon(0 0, 0 50%, 100% 50%);" id="board2zz"></div>
+							<div class="board3 top-0 absolute appearance-none outline-none w-[99.7%] h-[100px] opacity-100 transition-opacity bg-white duration-200" style="clip-path: polygon(0 0, 0 50%, 100% 0);" id="board3zz"></div>
+							<input type="range" min="1" max="100" value="50" class="slider1 absolute top-[50px] appearance-none w-[99.7%] h-0 outline-none opacity-100 transition-opacity duration-200 bg-rainbow hover:opacity-100" id="myRange1zz" onmouseup="movezz()" />
+							<div class="face w-[50px] h-[60px] absolute -top-20 left-[50%]" id="facezz">
+								<div class="face1 bg-face-gradient w-[50px] h-[50px] rounded-full relative">
+									<div class="mouth absolute bg-white w-[30px] h-[5px] rounded-none top-[35px] left-[10px]" id="mousezz"></div>
+									<div class="eye1 absolute bg-white w-[10px] h-[10px] rounded-full top-[15px] left-[10px]"></div>
+									<div class="eye2 absolute bg-white w-[10px] h-[10px] rounded-full top-[15px] right-[10px]"></div>
+									<div class="triangle absolute top-10 h-10 w-[50px] bg-triangle-gradient left-0" style="clip-path: polygon(10% 0, 0 30%, 40% 20%);"></div>
+									<div class="line1"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="select text-2xl pt-[130px] flex text-center">
+						<div
+							id="text1zz"
+							onclick="selectzz(1)"
+							class="relative font-thin text-sm py-[5px] px-0 w-1/5"
+						>
+							I meget lav grad
+						</div>
+						<div
+							class="rangetexts relative text-sm py-[5px] px-0 w-1/5"
+							id="text2zz"
+							onclick="selectzz(2)"
+						>
+							I lav grad
+						</div>
+						<div
+							class="rangetexts relative text-sm py-[5px] px-0 w-1/5"
+							id="text3zz"
+							onclick="selectzz(3)"
+						>
+							I nogenlunde grad
+						</div>
+						<div
+							class="rangetexts relative text-sm py-[5px] px-0 w-1/5"
+							id="text4zz"
+							onclick="selectzz(4)"
+						>
+							I høj grad
+						</div>
+						<div
+							class="rangetexts relative text-sm py-[5px] px-0 w-1/5"
+							id="text5zz"
+							onclick="selectzz(5)"
+						>
+							I meget høj grad
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="py-28 mb-3 border-gray-300 flex">
+				<span class="w-3/12 font-normal text-2xl mr-1 flex shrink-0">Hvordan er underivnsingsmiljøet i klassen?</span>
+				<div class="w-full">
+					<div class="px-[10%] py-0">
+						<div class="slidecontainer w-full relative">
+							<input type="range" min="1" max="100" value="50" class="slider absolute appearance-none w-[99.7%] h-[100px] outline-none opacity-50 transition-opacity duration-200 bg-rainbow hover:opacity-100 top-0.5" id="myRangezz" style="clip-path: polygon(100% 0, 0 50%, 100% 100%);" />
+
+							<div class="box absolute right-0 w-full h-[105px] bg-sky border-r-[5px] border-color1" style="clip-path: polygon(50% 25%, 50% 75%, 100% 100%, 100% 0%);" id="boxzz"></div>
+							<div class="board top-0.5 absolute appearance-none w-[99.7%] h-[100px] outline-none opacity-100 transition-opacity duration-200 bg-color1" style="clip-path: polygon(0 0, 0 50%, 100% 0);" id="boardzz"></div>
+							<div class="board1 top-[52px] absolute appearance-none w-[99.7%] h-[100px] outline-none opacity-100 transition-opacity duration-200 bg-color1" style="clip-path: polygon(0 0, 0 50%, 100% 50%);" id="board1zz"></div>
+							<div class="board2 top-[55px] absolute appearance-none w-[99.7%] h-[100px] outline-none opacity-100 transition-opacity duration-200 bg-white" style="clip-path: polygon(0 0, 0 50%, 100% 50%);" id="board2zz"></div>
+							<div class="board3 top-0 absolute appearance-none outline-none w-[99.7%] h-[100px] opacity-100 transition-opacity bg-white duration-200" style="clip-path: polygon(0 0, 0 50%, 100% 0);" id="board3zz"></div>
+							<input type="range" min="1" max="100" value="50" class="slider1 absolute top-[50px] appearance-none w-[99.7%] h-0 outline-none opacity-100 transition-opacity duration-200 bg-rainbow hover:opacity-100" id="myRange1zz" onmouseup="movezz()" />
+							<div class="face w-[50px] h-[60px] absolute -top-20 left-[50%]" id="facezz">
+								<div class="face1 bg-face-gradient w-[50px] h-[50px] rounded-full relative">
+									<div class="mouth absolute bg-white w-[30px] h-[5px] rounded-none top-[35px] left-[10px]" id="mousezz"></div>
+									<div class="eye1 absolute bg-white w-[10px] h-[10px] rounded-full top-[15px] left-[10px]"></div>
+									<div class="eye2 absolute bg-white w-[10px] h-[10px] rounded-full top-[15px] right-[10px]"></div>
+									<div class="triangle absolute top-10 h-10 w-[50px] bg-triangle-gradient left-0" style="clip-path: polygon(10% 0, 0 30%, 40% 20%);"></div>
+									<div class="line1"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="select text-2xl pt-[130px] flex text-center">
+						<div
+							id="text1zz"
+							onclick="selectzz(1)"
+							class="relative font-thin text-sm py-[5px] px-0 w-1/5"
+						>
+							Meget dårligt
+						</div>
+						<div
+							class="rangetexts relative text-sm py-[5px] px-0 w-1/5"
+							id="text2zz"
+							onclick="selectzz(2)"
+						>
+							Dårligt
+						</div>
+						<div
+							class="rangetexts relative text-sm py-[5px] px-0 w-1/5"
+							id="text3zz"
+							onclick="selectzz(3)"
+						>
+							Nogenlunde
+						</div>
+						<div
+							class="rangetexts relative text-sm py-[5px] px-0 w-1/5"
+							id="text4zz"
+							onclick="selectzz(4)"
+						>
+							Godt
+						</div>
+						<div
+							class="rangetexts relative text-sm py-[5px] px-0 w-1/5"
+							id="text5zz"
+							onclick="selectzz(5)"
+						>
+							Meget godt
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="tick bg-white w-full p-10 shadow-md shadow-slate-300 mb-10">
+			<div class="header mb-10">
+				<div class="flex">
+					<span class="font-bold text-lg mr-5">Mål for uddannelsen</span>
+					<img src="audio.png" class="flex w-6 h-6">>
+				</div>
+				<span class="text-sm">Dette afsnit omhandler...</span>
+			</div>
+			<div class="content">
+				<table class="border-gray w-full">
+					<thead>
+						<tr>
+							<th class="w-1/3"></th>
+							<th class="border ">I meget lav grad</th>
+							<th class="border">I lav grad</th>
+							<th class="border">I nogenlunde grad</th>
+							<th class="border">I høj grad</th>
+							<th class="border">I meget høj grad</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="border-b py-3 text-2xl">Undervisningen (aktiviteter, opgaver, øvelser) er relevant og hjælper til at nå målene for uddannelsen </td>
+							<td class="border relative" onclick="javascript:handleToggle(this);">
+								<div class="w-7 h-7 rounded-full bg-gray-300 ml-[50%] -translate-x-1/2"></div>
+								<img src="Checkmark.png" width="40" class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 hidden">
+							</td>
+							<td class="border relative" onclick="javascript:handleToggle(this);">
+								<div class="w-7 h-7 rounded-full bg-gray-300 ml-[50%] -translate-x-1/2"></div>
+								<img src="Checkmark.png" width="40" class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 hidden">
+							</td>
+							<td class="border relative" onclick="javascript:handleToggle(this);">
+								<div class="w-7 h-7 rounded-full bg-gray-300 ml-[50%] -translate-x-1/2"></div>
+								<img src="Checkmark.png" width="40" class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 hidden">
+							</td>
+							<td class="border relative" onclick="javascript:handleToggle(this);">
+								<div class="w-7 h-7 rounded-full bg-gray-300 ml-[50%] -translate-x-1/2"></div>
+								<img src="Checkmark.png" width="40" class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 hidden">
+							</td>
+							<td class="border relative" onclick="javascript:handleToggle(this);">
+								<div class="w-7 h-7 rounded-full bg-gray-300 ml-[50%] -translate-x-1/2"></div>
+								<img src="Checkmark.png" width="40" class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 hidden">
+							</td>
+						</tr>
+						<tr>
+							<td class="border-b py-3 text-2xl">Jeg synes målene er vigtige</td>
+							<td class="border relative" onclick="javascript:handleToggle(this);">
+								<div class="w-7 h-7 rounded-full bg-gray-300 ml-[50%] -translate-x-1/2"></div>
+								<img src="Checkmark.png" width="40" class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 hidden">
+							</td>
+							<td class="border relative" onclick="javascript:handleToggle(this);">
+								<div class="w-7 h-7 rounded-full bg-gray-300 ml-[50%] -translate-x-1/2"></div>
+								<img src="Checkmark.png" width="40" class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 hidden">
+							</td>
+							<td class="border relative" onclick="javascript:handleToggle(this);">
+								<div class="w-7 h-7 rounded-full bg-gray-300 ml-[50%] -translate-x-1/2"></div>
+								<img src="Checkmark.png" width="40" class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 hidden">
+							</td>
+							<td class="border relative" onclick="javascript:handleToggle(this);">
+								<div class="w-7 h-7 rounded-full bg-gray-300 ml-[50%] -translate-x-1/2"></div>
+								<img src="Checkmark.png" width="40" class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 hidden">
+							</td>
+							<td class="border relative" onclick="javascript:handleToggle(this);">
+								<div class="w-7 h-7 rounded-full bg-gray-300 ml-[50%] -translate-x-1/2"></div>
+								<img src="Checkmark.png" width="40" class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 hidden">
+							</td>
+						</tr>
+						<tr>
+							<td class="border-b py-3 text-2xl">Hele klassen deltager aktivt I at prøve at få den viden og de færdigheder</td>
+							<td class="border relative" onclick="javascript:handleToggle(this);">
+								<div class="w-7 h-7 rounded-full bg-gray-300 ml-[50%] -translate-x-1/2"></div>
+								<img src="Checkmark.png" width="40" class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 hidden">
+							</td>
+							<td class="border relative" onclick="javascript:handleToggle(this);">
+								<div class="w-7 h-7 rounded-full bg-gray-300 ml-[50%] -translate-x-1/2"></div>
+								<img src="Checkmark.png" width="40" class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 hidden">
+							</td>
+							<td class="border relative" onclick="javascript:handleToggle(this);">
+								<div class="w-7 h-7 rounded-full bg-gray-300 ml-[50%] -translate-x-1/2"></div>
+								<img src="Checkmark.png" width="40" class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 hidden">
+							</td>
+							<td class="border relative" onclick="javascript:handleToggle(this);">
+								<div class="w-7 h-7 rounded-full bg-gray-300 ml-[50%] -translate-x-1/2"></div>
+								<img src="Checkmark.png" width="40" class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 hidden">
+							</td>
+							<td class="border relative" onclick="javascript:handleToggle(this);">
+								<div class="w-7 h-7 rounded-full bg-gray-300 ml-[50%] -translate-x-1/2"></div>
+								<img src="Checkmark.png" width="40" class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 hidden">
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+		<div class="flex justify-end">
+			<a href="page3.html"><button class="flex justify-between py-4 px-8 bg-green-600 w-60">
+				<span class="text-white font-medium text-base">Fortsæt</span>
+				<img src="right-arrow.png" class="w-10 h-6 flex invert">
+			</button><a/>
+		</div>
+	</div>
+	<script type="text/javascript" src="range-slider.js"></script>
+	<script type="text/javascript" src="sentence.js"></script>
+	<script type="text/javascript" src="tick.js"></script>
+</body>
+</html>

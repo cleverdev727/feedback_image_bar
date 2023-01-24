@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="https://cdn.tailwindcss.com"></script>
+	<title>D</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+	<script type="text/javascript">
+		tailwind.config = {
+			theme: {
+				extend: {
+					fontFamily: {
+						'rubik': ['Rubik', 'sans-serif']
+					},
+					minWidth: {
+						10: '40px'
+					}
+				}
+			}
+		}
+	</script>
+	<script type="text/javascript">
+		const toggle = (id) => {
+			hideAll(id);
+			document.getElementById(id).parentElement.children[1].style.display = document.getElementById(id).parentElement.children[1].style.display !== 'block' ? 'block' : 'none';
+		}
+
+		const handleSelect = (id, val) => {
+			document.getElementById(id).innerHTML = val;
+			hideAll();
+		};
+
+		const hideAll = (id = null) => {
+			const elems = document.getElementsByTagName('ul');
+			const len = elems.length;
+			for (let i = 0; i < len; i ++) {
+				if (id !== null) {
+					elems[i].parentElement.children[0].id !== id && (elems[i].style.display = 'none');
+				} else {
+					elems[i].style.display = 'none';
+				}
+			}
+		};
+
+	</script>
+</head>
+<body class="bg-gray-100 h-full w-full">
+	<div class="bg-white mx-5 my-10 p-10 shadow-md shadow-slate-300">
+		<div class="card-d w-full font-rubik">
+			<div class="header mb-10">
+				<div class="flex">
+					<span class="font-bold text-lg mr-5">Question Placeholder</span>
+					<img src="sound.png" class="flex">
+				</div>
+				<span class="text-sm">Descrispantion placeholder</span>
+			</div>
+			<div class="content">
+				<div class="sentence mb-40">
+					<span class="font-medium">
+						Today I feel &nbsp;
+						<div class="relative min-w-10 inline-flex">
+							<span id="option1" class="w-full h-6 border-b-2 bordr-gray-100 outline-none cursor-pointer" onclick="javascript:toggle('option1');">&nbsp;</span>
+							<ul class="bg-white shadow-lg shadow-slate-400 rounded-2xl cursor-pointer top-6 p-2 z-10 hidden absolute w-max">
+								<li onclick="javascript:handleSelect('option1', 'happy');" class="border-b border-gray py-1">happy</li>
+								<li onclick="javascript:handleSelect('option1', 'sad');" class="py-1">sad</li>
+							</ul>
+						</div>
+						, because I  &nbsp;
+						<div class="relative min-w-10 w-max inline-flex">
+							<span id="option2" class="w-full h-6 border-b-2 bordr-gray-100 outline-none cursor-pointer" onclick="javascript:toggle('option2');">&nbsp;</span>
+							<ul class="bg-white shadow-lg shadow-slate-400 rounded-2xl cursor-pointer top-6 p-2 z-10 hidden absolute w-max">
+								<li onclick="javascript:handleSelect('option2', 'did run');" class="border-b border-gray py-1">did run</li>
+								<li onclick="javascript:handleSelect('option2', 'did not run');" class="py-1">did not run</li>
+							</ul>
+						</div>
+						. I will  &nbsp;
+						<div class="relative w-40 inline-flex">
+							<span id="option3" class="w-full h-6 border-b-2 bordr-gray-100 outline-none cursor-pointer" onclick="javascript:toggle('option3');">&nbsp;</span>
+							<ul class="bg-white shadow-lg shadow-slate-400 rounded-2xl cursor-pointer top-6 p-2 z-10 hidden absolute w-max">
+								<li onclick="javascript:handleSelect('option3', 'run tomorrow');" class="border-b border-gray py-1">run tomorrow</li>
+								<li onclick="javascript:handleSelect('option3', 'not run tomorrow');" class="py-1">not run tomorrow</li>
+							</ul>
+						</div>
+					</span>
+				</div>
+				<div class="square">
+					<span class="flex font-bold text-lg mb-4">Question Placeholder</span>
+					<textarea class="w-full h-40 border-2 border-gray outline-none"></textarea>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
